@@ -1,7 +1,7 @@
 # for-cote
 
 - [x] 백준 10816: Frequency Counting
-- [] 백준 1439
+- [x] 백준 1439: Frequency Counting
 - [] 백준 10799 
 - [] 백준 1992
 - [] 백준 9012
