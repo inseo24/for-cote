@@ -2,7 +2,7 @@
 
 - [x] 백준 10816: Frequency Counting
 - [x] 백준 1439: Frequency Counting
-- [] 백준 10799 
+- [x] 백준 10799: Frequency Counting(Stack 가능)
 - [] 백준 1992
 - [] 백준 9012
 - [] 백준 2447 
