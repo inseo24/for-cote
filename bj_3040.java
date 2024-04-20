@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/3040
 public class bj_3040 {
     static int[] combination = new int[7];
     static boolean found = false;

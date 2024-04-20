@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/9012
 public class bj_9012 {
 
     public static void main(String[] args) throws IOException {

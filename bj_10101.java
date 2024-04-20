@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/10101
 public class bj_10101 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

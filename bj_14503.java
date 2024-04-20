@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/14503
 public class bj_14503 {
     static int count = 0;
     static int[][] directions = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}}; // 북, 동, 남, 서

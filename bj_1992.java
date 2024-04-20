@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/1992
 public class bj_1992 {
 
     // 1. 재귀적으로 4개 영역을 분할

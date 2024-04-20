@@ -1,5 +1,6 @@
 import java.io.*;
 
+// https://www.acmicpc.net/problem/10799
 public class bj_10799 {
     public static void main(String[] args) throws IOException {
         // 현재 문자가 '('면 openCount++
