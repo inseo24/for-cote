@@ -5,7 +5,7 @@
 - [x] 백준 10799: Frequency Counting(Stack 가능)
 - [x] **백준 1992: Divide and Conquer**
 - [x] 백준 9012: String, Stack
-- [] 백준 2447 
+- [x] **백준 2447: Divide and Conquer, 재귀 가능**
 - [] 백준 10101
 - [] 백준 14503
 - [] 백준 3040
