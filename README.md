@@ -4,7 +4,7 @@
 - [x] 백준 1439: Frequency Counting
 - [x] 백준 10799: Frequency Counting(Stack 가능)
 - [x] **백준 1992: Divide and Conquer**
-- [] 백준 9012
+- [x] 백준 9012: Strin, 
 - [] 백준 2447 
 - [] 백준 10101
 - [] 백준 14503
