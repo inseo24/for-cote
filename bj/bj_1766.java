@@ -3,6 +3,16 @@ import java.util.*;
 
 // https://www.acmicpc.net/problem/1766
 // 위상정렬(Topological Sort)
+
+// 1. 먼저 푸는 것이 좋은 문제에 대한 정보를 이용하여 방향 그래프를 생성
+//    각 문제를 노드로 표현하고, A번 문제가 B번 문제보다 먼저 풀어야 한다는 정보를 이용하여 A에서 B로 가는 방향 간선을 추가
+// 2. 그래프에서 진입 차수(Indegree)가 0인 노드를 찾는다. 선행해서 풀어야 할 문제가 없는 노드를 찾아 큐에 넣는다.
+// 3. 큐에서 노드를 하나씩 꺼내면서 아래 과정을 반복:
+//    - 큐에서 꺼낸 노드를 정렬된 순서(PriorityQueue)에 추가
+//    - 꺼낸 노드에서 나가는 간선을 제거(해당 노드에 연결된 다른 노드들의 진입 차수를 1씩 감소시킴)
+//    - 진입 차수가 0이 된 노드들을 큐에 추가한다.
+// 4. 큐가 빌 때까지 위의 과정을 반복
+// 5. 정렬된 순서를 출력
 public class Main {
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
