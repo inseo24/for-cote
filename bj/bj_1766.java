@@ -13,7 +13,7 @@ import java.util.*;
 //    - 진입 차수가 0이 된 노드들을 큐에 추가한다.
 // 4. 큐가 빌 때까지 위의 과정을 반복
 // 5. 정렬된 순서를 출력
-public class Main {
+public class bj_1766 {
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
              BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out))
