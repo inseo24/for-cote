@@ -24,15 +24,10 @@ class Result {
         long min = (long) arr.get(0);
         long sum = 0;
         
-        for (int i = 0; i < arr.size(); i++) {
-            var element = arr.get(i);
-            
-            if (element > max) {
-                max = element;
-            } else if (element < min) {
-                min = element;
-            }
-            sum += element;
+        for (int num : arr) {
+            sum += num;
+            min = Math.min(min, num);
+            max = Math.max(max, num);
         }
         
         System.out.println((sum - max) + " " + (sum - min));

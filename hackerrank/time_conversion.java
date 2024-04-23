@@ -20,23 +20,18 @@ class Result {
      */
 
     public static String timeConversion(String s) {
-        String answer = s.substring(0, 8);
-        int h = Integer.parseInt(s.substring(0, 2));
-        String ft = s.substring(8, 10);
-        
-        if (ft.equals("AM")) {
-            if (h >= 12) {
-                answer = "00:" + s.substring(3, 8);
-            }
-        } else {
-            h += 12;
-            if (h > 24) {
-                answer = "00:" + s.substring(3, 8);
-            } else if (h < 24) {
-                answer = h + ":" + s.substring(3, 8);
-            }
+        int hour = Integer.parseInt(s.substring(0, 2));
+        String minutes = s.substring(3, 5);
+        String seconds = s.substring(6, 8);
+        String meridian = s.substring(8, 10);
+
+        if (meridian.equals("PM") && hour != 12) {
+            hour += 12;
+        } else if (meridian.equals("AM") && hour == 12) {
+            hour = 0;
         }
-        return answer;
+
+        return String.format("%02d:%s:%s", hour, minutes, seconds);
     }
 
 }

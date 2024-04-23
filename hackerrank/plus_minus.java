@@ -25,13 +25,13 @@ class Result {
         double negative = 0.000000;
         double zero = 0.000000;
         
-        for (int i = 0; i < size; i++) {
-            if (arr.get(i) > 0) {
+        for (int num : arr) {
+            if (num > 0) {
                 positive++;
-            } else if (arr.get(i).equals(0)) {
-                zero++;
-            } else {
+            } else if (num < 0) {
                 negative++;
+            } else {
+                zero++;
             }
         }
         
