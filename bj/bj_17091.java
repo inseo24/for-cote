@@ -2,9 +2,12 @@ import java.io.*;
 import java.util.*;
 
 // https://www.acmicpc.net/problem/17091
-// 0분일 땐 o' clock / 30분 초과면 past/to, 분 표현
-// 1분일 땐 분을 단수로 표현, 그 외는 복수 표현
-// 15, 30, 45분일 때는 minute 대신 quarter, half
+// 시간이 1부터 12 사이, 분이 0부터 59 사이인지 확인, 이 범위를 벗어나면 raise IllegalArgumentException
+// 0분인 경우 "o' clock"
+// 15분, 30분, 45분인 경우 각각 "quarter past", "half past", "quarter to"
+// 30분 이전인 경우 "past", 30분 이후인 경우 "to"
+// 1분인 경우 "minute", 그 외의 경우 "minutes"
+// 시간이 12시를 넘어갈 경우 처리, ex, 11시 45분은 "quarter to twelve"로 표현
 public class bj_17091 {
     private static final String[] ONES = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
             "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
